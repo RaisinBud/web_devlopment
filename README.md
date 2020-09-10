@@ -1,2 +1,2 @@
-# JBL-product-landing-page.github.io
+# JBL-product-landing-page
 A demo product landing page for "JBL PartyBox 100".
