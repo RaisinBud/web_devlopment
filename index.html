@@ -2,97 +2,99 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Product Landing Page</title>
+  <title>CodePen - Survey Form</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<header id="header">
-  
-  <img id="header-img" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/JBL_logo.svg" alt="company-logo">
-  
-  <nav id="nav-bar">
-    <ul>
-        <li><a class="nav-link" href="#Product">Product</a></li>
-        <li><a class="nav-link" href="#Features">Features</a></li>
-        <li><a class="nav-link" href="#Contact-Us">Contact Us</a></li>
-      <li><a class="nav-link" href="#Follow-Us">Follow Us</a></li>
-      </ul>
-  </nav>
-</header>
+<h1 id="title">Life in Covid</h1>
 
-<div class="product-page">
-    <img id="Product" class="product" src="https://in.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4df99df0/JBL_PartyBox_100_Hero_0057.png" alt="JBL PartyBox 100">
-  
-  <div class="product-info">
-  <h1><b>JBL PartyBox 100</b></h1>
-<p>Powerful portable Bluetooth party speaker with dynamic light show</p>
-    <p><span class="dot"></span> Power to the party<br>
-<span class="dot"></span> Light up your party<br>
-<span class="dot"></span> A battery that just won't quit</p>
-  
-    <p id="price">&#8377; 23999.00</p>
-    <p>For Bulk Enquiry:<a id="link" href="#"> click here</a></p>
-    
-    <form class="form-detail" id="form" action="https://www.freecodecamp.com/email-submit">
-        <h3 id="book-now">Book Now!</h3>
-        <hr>
-      <p>Enter your email, we will get back to you</p>
-          <label>Email address</label>
-             <input
-                 name="email"
-                 id="email"
-                 type="email"
-                 placeholder="Enter your email address"
-                 required />
-             <input id="submit" type="submit" value="Submit" class="btn"/>
-  </form>
-  </div>
-</div>
+<p id="description">Are you also BoREd?<br>Let's see what everybody's upto.</p>
 
+<main>
+<form id="survey-form">
   
- <div class="video-page" id="Features">
-    <div id="part-1">
-      <p id="phrase1">Be Loud,<br>Be Proud,<br>Be Ready To Party!</p>
-  <iframe class="video" id="video" width="887" height="499" src="https://www.youtube.com/embed/nGen5ReV1-Y"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
-    <div id="part-2">
-  <iframe class="video" id="video2" width="600" height="499" src="https://www.youtube.com/embed/AQKLE1DJ5AE"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p id="phrase2">Plug in Play<br>
-      Stream seamlessly with Bluetooth<br>
-      Playlist made Easy</p>
-    </div>
-</div>
-
-<footer id="footer">
-  
-  <div class="footer-page">   
-   <div class="footer-container">
-              <h3 id="Follow-Us">Follow Us</h3>
-                <div class="social-media">
-                    <a href="#"><img class="facebook" src="https://i.pinimg.com/originals/27/d5/42/27d542e2e2626de4c08ee3d84aaabb7b.png" alt="facebook-logo"></a> 
-                    <a href="#"><img class="facebook" src="https://img.freepik.com/free-icon/twitter-circled_318-10749.jpg?size=338&ext=jpg" alt="twitterlogo"></a>
-                    <a href="#"><img class="facebook" src="https://image.similarpng.com/very-thumbnail/2020/07/Instagram-black-and-white-logo-vector-png-(5).png" alt="instagram-logo"></a>
-                    <a href="#"><img class="facebook" src="https://pp.netclipart.com/pp/s/453-4530096_youtube-clipart-youtube-icon-black-youtube-logo-png.png" alt="youtube-logo"></a>
-                </div>
-           <img src="https://in.jbl.com/on/demandware.static/-/Sites-JB-INDIA-Library/default/dw603c6855/footer/security-logo.png" alt="secure site">
-  </div>     
-          
-  <div class="contact" id="Contact-Us">
-         <h3>Contact Us</h3>
-         <p>1800-102-0525</p>
-         <a href="#"><h4>E-mail Support</h4></a>
+  <div class="form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your Name" required />
   </div>
   
+  <div class="form">
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your Email" required />
+  </div>
+
+  <div class="form">
+    <label id="number-label" for="number">Age</label>
+    <input type="number" id="number" min="10" max="99" placeholder="Enter your Age" />
+  </div>
+
+  <div class="form">
+    <p>What did you started learning or did the most in this lockdown ?</p>
+    <select id="dropdown" required>
+      <option disabled selected value>None</option>
+      <option value="Cooking">Cooking</option>
+      <option value="Guitar">Guitar</option>
+      <option value="Gyming/Yoga">Gyming/Yoga</option>
+      <option value="Dancing">Dancing</option>
+      <option value="Sleeping">Sleeping</option>
+      <option value="Dreaming">Dreaming</option>
+      <option value="Reading">Reading</option>
+      <option value="channel">Started channel/page</option>
+      <option value="movies">Watched all movies/series</option>
+      <option value="other">Other</option>
+    </select>
   </div>
   
-  <hr>
-  
-<p id="rights-reserved">© 2020 Harman International Industries, Incorporated. All rights reserved.</p>
+  <div class="form">
+    <p>Are you still doing it?</p>
+    <label>
+      <input name="user-recommend" value="yes" type="radio" checked />Yes</label>
 
-</footer>
+    <label>
+      <input name="user-recommend" value="no" type="radio" />No</label>
+
+    <label><input name="user-recommend" value="not-sure" type="radio" />
+      Not sure</label>
+  </div>
+  
+  <div class="form">
+    <p>
+      What would you like to do after Lockdown is over?
+      <span>(Check all that apply)</span>
+    </p>
+    <label>
+      <input name="prefer" value="hangout" type="checkbox" />Hangout with friends</label>
+
+    <label>
+      <input name="prefer" value="Drunk" type="checkbox" />Get Drunk AF</label>
+
+    <label><input name="prefer" value="Trip" type="checkbox" />Go on a Trip</label>
+
+    <label><input name="prefer" value="sleep" type="checkbox" />Still wanna sleep some more</label>
+
+    <label><input name="prefer" value="Idea" type="checkbox" />Take the risk and implement that Idea</label>
+
+    <label><input name="prefer" value="confused" type="checkbox" />Still confused</label>
+
+    <label><input name="prefer" value="cope up" type="checkbox" />Cope up with the lost time and do everything</label>
+    <label>
+
+      <input name="prefer" value="else" type="checkbox" />Netflix and chill</label>
+  </div>
+
+  <div class="form">
+    <p>How was this survey? say anything, even if it's unrelated to this survey.</p>
+    <textarea id="comments" name="comment" rows="4" cols="40" placeholder="Add your comment here..."></textarea>
+  </div>
+
+  <div class="form">
+    <button class="b" type="submit" id="submit">Submit</button>
+  </div>
+  
+</form>
+</main>
 <!-- partial -->
   
 </body>

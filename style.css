@@ -1,251 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Courgette&family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-a{
-    color: white;
-    font-family: 'Acme', sans-serif;
-    text-decoration:none;
-}
-
-a:hover{
-    text-decoration:underline;  
-}
-
-body{
+body {
+  text-align: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-musical-instrument-border-background-image_203021.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "sans-serif";
   width:100%;
-  background-color:White;
   position:relative;
   margin: auto;
 }
 
-#header-img{
-  max-width: 50px;
-  height: auto;
-  margin-left:30px;
+#survey-form {
+  max-width:60em;
+  width: 700px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: rgba(0, 51, 0, 1);
+  background: linear-gradient(35deg, #001a00, #006600);
+  font-size: 20px;
+  opacity: 0.9;
+  font-family: sans-serif;
+  color: #ccff99;
 }
 
-header{
-    top:0px;
-    width:100%;
-    height:20px;
-    padding:20px;
-    font-size:18px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:fixed;
-    background-color:black;
-    opacity:0.9;
+#title {
+  font-size: 60px;
+  color: #ffff00;
 }
 
-ul{
-  justify-content:space-around;
-  list-style:none;
-  display:flex;
+#description {
+  font-size: 20px;
+  color: #ffff66;
 }
 
-nav{
+#name {
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#email {
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#number {
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+#dropdown {
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#comments {
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#submit {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 3%;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.form{
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 800px){
+  body{
+     overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 450px){
+
+#survey-form {
   width:100%;
+  padding: 20px;
+  font-size: 15px;
 }
-
-.product-page{
-    margin-top:80px;
-    margin-bottom:95px;
-    height: 500px;
-    display:flex;
-    background-color:white;
-    justify-content:space-around;
-    align-content:center;
-}
-
-#link{
-    color:blue;
-}
-
-.product{
-    max-width: 45%;
-    height: auto;
-}
-
-.dot{
-  height: 10px;
-  width: 10px;
-  background-color: grey;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.form-detail{
-  background-color:white;
-  justify-content:center;
-  align-items:center;
-}
-
-#price{
-    font-size:30px;
-}
-
-#book-now{
-    font-size: 30px;
-    color:#c94c4c;
-}
-
-#form{
-    margin-top:30px;
-    text-align:left;
-    margin-bottom:20px;
-}
-
-#email{
-    dispaly:block;
-    padding:0.75rem 0.75rem;
-    border-radius:0.15rem;
-}
-
-.btn{
-    width:30%;
-    padding:0.55rem;
-    background: #82b74b;
-    color: black;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.video-page{
-    background-color:Black;
-    height: 1050px;
-    margin-bottom:40px;
-}
-
-#part-1{
-    padding:10px 0px 20px;
-    display:flex;
-    justify-content:space-around;
-    align-content:center;
-}
-
-#part-2{
-    padding: 0px 0px 10px;
-    display:flex;
-    justify-content:space-around;
-    align-content:center;
-}
-
-#phrase1{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Courgette', cursive;
-    line-height:70px;
-    color:#66fcf1;
-}
-
-#phrase2{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Courgette', cursive;
-    line-height:70px;
-    color:#c3073f;
-}
-
-.video{
-    object-fit:contain;
-}
-
-#footer{
-    background-color:black;
-    height:200px;
-}
-
-.facebook{
-    max-width:20px;
-    height: auto;
-}
-
-.footer-page{
-  color:white;
-  display:flex;
-  justify-content:space-around;
-}
-
-#rights-reserved{
-  text-align:center;
-  color:white;
-}
-
-@media only screen and (max-width: 425px) {
-  nav {
-    display:none;
-  }
-}
-
-@media (max-width: 425px) {
-  .logo {
-    margin-top: 0px;
-    width: 100%;
-    position: relative;
-  }
-  .product-page{
-      flex-wrap:wrap;
-  }
-  .product{
-      max-width: 100%;    
-  }
-  .product-page{
-    margin-top:100px;
-    margin-bottom:20px;
-    height: 900px;
-  }
-  .video-page{
-    height: 700px;
-    margin-top:0px;
-    margin-bottom:20px;
-  }
-  #footer{
-    height:200px;
-  }
-  #part-1{
-      flex-wrap:wrap;
-  }
-  #video{
-      display:none;
-  }
-  #phrase1{
-      font-family: 'Russo One', sans-serif;
-      font-size: 20px;
-      line-height:20px;
-      color: #d6d4e0;
-  }
-  #part-2{
-      flex-wrap:wrap;
-  }
-  #phrase2{
-      display:none;
-  }
-  .product-info{
-      padding:10px;
-  }
-  .btn{
-    margin-top: 2.5%;
-  }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 426px) {
-  .btn{
-    margin-top: 3%;
-  }
-  .video-page{
-    
-  }
-
-#part-1{
-    padding:0px 20px 0px;
-  }
-
-#part-2{
-    padding:0px 20px 0px;
-  }
   
-.video{
-    frameBorder:0;
-  }
+#title {
+  font-size: 30px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+#description {
+  font-size: 15px;
+  margin-bottom:10px;
+}
+
+#name {
+  width: 240px;
+  padding: 10px;
+}
+
+#email {
+  width: 240px;
+  padding: 10px;
+}
+
+#number {
+  width: 240px;
+  padding: 10px;
+}
+  
+label {
+  font-size: 1rem;
+}
+
+#dropdown {
+  width: 240px;
+  padding: 10px;
+}
+  
+#comments {
+  width: 240px;
+  padding: 10px;
+}
+
+#submit {
+  width: 95%;
+  padding: 10px;
+  font-size: 15px;
+} 
+  
 }
